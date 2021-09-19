@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1
+        /* var time = prompt('请输入时间');
+        switch (time) {
+            case '12':
+                alert('中午好');
+                break;
+            case '18':
+                alert('下午好');
+                break;
+            case '23':
+                alert('晚上好');
+                break;
+            default:
+                alert('目前是' + time + '点');
+        } */
+
+        // 2
+        /* var num1 = prompt('请输入数字');
+        var num2 = prompt('请输入另一个数字');
+        if (num1 > num2) {
+            alert(num1);
+        } else {
+            alert(num2);
+        }  */  
+
+        // 3
+        /* var num = prompt('请输入一个数字');
+        if (num == 0) {
+            alert('您输入的是自然数0');
+        } else if (num % 2 == 0) {
+            alert('您输入的数字' + num + '是偶数');
+        } else {
+            alert('您输入的数字' + num + '是奇数');
+        } */
+
+        // 4
+        /* var weekday = prompt('请输入数字1～7');
+        switch (weekday) {
+            case '1':
+                alert('星期一');
+                break;
+            case '2':
+                alert('星期二');
+                break;
+            case '3':
+                alert('星期三');
+                break;
+            case '4':
+                alert('星期四');
+                break;
+            case '5':
+                alert('星期五');
+                break;
+            case '6':
+                alert('星期六');
+                break;
+            case '7':
+                alert('星期天');
+                break;
+            default:
+                alert('请您输入1～7');
+        } */
+        var str = '';
+        for (var i = 1; i <= 9; i++) {
+            for (var j = 1; j <= i; j++ ) {
+                str += j + 'x' + i + '=' + i * j + ' ';
+            }
+            str += '\n';
+        }
+        console.log(str);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

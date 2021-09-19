@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var cash = 100;
+        var choose = 1;
+        while (choose != 4) {
+            choose = prompt('请输入您要的操作：\n1. 存钱\n2. 取钱\n3. 查余额\n4. 退出')
+            if (choose == 4) {
+                break;
+            }
+            switch (choose) {
+                case '1': 
+                    cash += parseFloat(prompt('请输入您需要存入的金额：'));
+                    alert('您目前的余额为' + cash + '元.');
+                    break;
+                case '2':
+                    cash -= parseFloat(prompt('请输入您需要取出的金额：'));
+                    alert('您目前的余额为' + cash + '元.');
+                    break;
+                case '3': 
+                    alert('您目前的余额为' + cash + '元.');
+                    break;
+                default: 
+                    alert('请您输入正确的数字.');
+                    break;
+            }
+        }
+        alert('系统正在退出......');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
